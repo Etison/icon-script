@@ -14,6 +14,10 @@ export default class Converter {
       .replace(/-desc$/, '-descending')
       .replace(/-desc-/, '-descending-')
       .replace(/-/g, '.')
+      .replace(/1/g, 'one')
+      .replace(/2/g, 'two')
+      .replace(/3/g, 'three')
+      .replace(/4/g, 'four')
       .replace(/\s/g, '.');
   }
 

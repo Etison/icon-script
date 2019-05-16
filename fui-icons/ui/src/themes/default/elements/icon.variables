@@ -29,7 +29,17 @@
 ;
 @outlineFallbackSRC: url("@{fontPath}/@{outlineFontName}.eot");
 
-
+/* Thin Icons */
+@importThinIcons: true;
+@thinFontName: 'thin-icons';
+@thinSrc:
+  url("@{fontPath}/@{thinFontName}.eot?#iefix") format('embedded-opentype'),
+  url("@{fontPath}/@{thinFontName}.woff2") format('woff2'),
+  url("@{fontPath}/@{thinFontName}.woff") format('woff'),
+  url("@{fontPath}/@{thinFontName}.ttf") format('truetype'),
+  url("@{fontPath}/@{thinFontName}.svg#icons") format('svg')
+;
+@thinFallbackSRC: url("@{fontPath}/@{thinFontName}.eot");
 
 /* Brand Icons */
 @importBrandIcons: true;
